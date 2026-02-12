@@ -12,13 +12,13 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1 className="mb-6">
+                        <h1 className="mb-8">
                             Hi, I'm <span className="text-gradient">Your Name</span>
                         </h1>
-                        <p className="text-2xl md:text-3xl mb-4 text-gray-300">
+                        <p className="text-2xl md:text-3xl mb-6 text-gray-300 font-semibold">
                             Full Stack Developer & Creative Designer
                         </p>
-                        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                        <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
                             I craft beautiful, functional web experiences with modern technologies.
                             Passionate about clean code and stunning user interfaces.
                         </p>
@@ -28,7 +28,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="flex flex-wrap gap-4 justify-center mb-12"
+                        className="flex flex-wrap gap-6 justify-center mb-16"
                     >
                         <a href="#projects" className="btn btn-primary">
                             View My Work
@@ -42,29 +42,32 @@ export default function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="flex gap-6 mb-12"
+                        className="flex gap-8 mb-16"
                     >
                         <a
                             href="https://github.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
+                            className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-125"
+                            aria-label="GitHub"
                         >
-                            <Github size={28} />
+                            <Github size={32} />
                         </a>
                         <a
                             href="https://linkedin.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
+                            className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-125"
+                            aria-label="LinkedIn"
                         >
-                            <Linkedin size={28} />
+                            <Linkedin size={32} />
                         </a>
                         <a
                             href="mailto:your.email@example.com"
-                            className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
+                            className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-125"
+                            aria-label="Email"
                         >
-                            <Mail size={28} />
+                            <Mail size={32} />
                         </a>
                     </motion.div>
 
@@ -74,8 +77,9 @@ export default function Hero() {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
                         className="animate-bounce"
+                        aria-label="Scroll to about section"
                     >
-                        <ArrowDown size={32} className="text-gray-400" />
+                        <ArrowDown size={36} className="text-gray-400 hover:text-white transition-colors" />
                     </motion.a>
                 </div>
             </div>
